@@ -64,6 +64,27 @@
             background: brown;
             transform: 1.05;
         }
+        /* 📱 تابلت */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+      .cake video, 
+      .cake iframe {
+        height: 180px;
+      }
+    }
+
+    /* 📱 موبايل صغير */
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .cake video, 
+      .cake iframe {
+        height: 220px;
+      }
+    }
 
     </style>
 </head>
@@ -87,4 +108,5 @@
     </div>
     </div>
 </body>
+
 </html>
